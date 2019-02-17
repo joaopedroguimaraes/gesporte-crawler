@@ -1,2 +1,3 @@
 # gesporte-crawler
-Globo Esporte web-crawler
+This is a Globo Esporte web-crawler.
+
