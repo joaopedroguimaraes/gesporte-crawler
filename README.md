@@ -10,12 +10,13 @@ lose any match result. Time to cheer for your team!
 For you to run this application, you will need to follow these instructions.
 
 Start with cloning this repo into a folder. Go to a folder you want to clone this repo and use:
+
 ```
 git clone git@github.com:joaopedroguimaraes/gesporte-crawler.git
 ```
 
-Now, you'll need [Maven](https://maven.apache.org/) installed. I recommend you use IntelliJ IDEA, once Maven comes
-with installation.
+Now, you'll need [Maven](https://maven.apache.org/) installed. If you're using IntelliJ IDEA, Maven comes with
+installation (though you can only use Maven commands within IntelliJ).
 
 You'll need Java 8 JDK, too. You can download and install it [here](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
@@ -26,6 +27,7 @@ src\main\resources\
 ```
 
 This file is responsible for DB connection. Add these lines with your own configurations for MySQL:
+
 ```
 ## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
 spring.datasource.url = jdbc:mysql://[IP OR LOCALHOST]:[PORT]/[DATABASE NAME]
@@ -41,16 +43,19 @@ spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDial
 spring.jpa.hibernate.ddl-auto = update
 ```
 
-Now, open your cmd, go to the project root folder and do:
+If you are not using IntelliJ (having Maven installed already), open your cmd, go to the project root folder and do:
 
 ```
 mvn clean install
 ```
 
-Wait until it is finished and do:
+Wait until it is finished and run:
+
 ```
 mvn spring-boot:run
 ```
+
+With IntelliJ it comes easier. Run Maven `clean`, then `install`, and you're ready to Build and Run the project.
 
 ## What we love
 
